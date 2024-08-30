@@ -1,2 +1,38 @@
 <h1 style="text-align: center;">Select country to know the details about country</h1>
+<div style="text-align: center;">
+  <select (click) = "action2($event)">
+    <option>Select any Country</option>
+    <option>India</option>
+    <option>USA</option>
+    <option>China</option>
+    <option>Pakistan</option>
+    <option>Japan</option>
+    <option>Russia</option>
+    <option>Indonasia</option>
+    <option>UK</option>
+    <option>Nepal</option>
+    <option>Bhutan</option>
+    <option>South Afrika</option>
+    <option>Australia</option>
+    <option>England</option>
+    <option>London</option>
+  </select>
+  
+</div>
 
+<div style="text-align: center;" [ngSwitch] = "country">
+  <p *ngSwitchCase="'India'">{{countries[0].description}}</p>
+  <p *ngSwitchCase="'USA'">{{countries[1].description}}</p>
+  <p *ngSwitchCase="'China'">{{countries[2].description}}</p>
+  <p *ngSwitchCase="'Pakistan'">{{countries[3].description}}</p>
+  <p *ngSwitchCase="'Japan'">{{countries[4].description}}</p>
+  <p *ngSwitchCase="'Russia'">{{countries[5].description}}</p>
+  <p *ngSwitchCase="'Indonasia'">{{countries[6].description}}</p>
+  <p *ngSwitchCase="'UK'">{{countries[7].description}}</p>
+  <p *ngSwitchCase="'Nepal'">{{countries[8].description}}</p>
+  <p *ngSwitchCase="'Bhutan'">{{countries[9].description}}</p>
+  <p *ngSwitchCase="'South Afrika'">{{countries[10].description}}</p>
+  <p *ngSwitchCase="'Australia'">{{countries[11].description}}</p>
+  <p *ngSwitchCase="'England'">{{countries[12].description}}</p>
+  <p *ngSwitchCase="'London'">{{countries[13].description}}</p>
+</div>
